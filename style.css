@@ -1,0 +1,921 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+
+}
+#mobile{
+    display: none;
+}
+#latop{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    padding: 0 100px;
+    text-decoration: none !important;
+    box-shadow: 0 0 9px;
+    background-color: white;
+    /* position: sticky; */
+    /* top: 0px; */
+    /* z-index: 1 !important; */
+}
+#latop .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    align-items: center;
+    /* border: 2px solid; */
+
+    /* margin: 0px 60px; */
+    /* position: relative; */
+    /* left: 100px; */
+}
+#latop .logo  a img{
+    height: 40px;
+    border-radius: 10px;
+}
+#latop .logo  a {
+    font-size: 22px;
+    text-decoration: none !important;
+    color: #d4045c;
+    font-family: 'Roboto', sans-serif;
+}
+#latop .logo i{
+    display: none;
+}
+#latop .bttns{
+    display: flex;
+    align-items: center;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+#latop .bttns button{
+    padding: 8px 25px;
+    color: #d4045c;
+    font-size: 15px;
+    border-radius: 11px;
+    cursor: pointer;
+    font-weight: 700;
+}
+#latop .bttns #login{
+    border:1.5px solid #d4045c;
+    transition: all ease 0.3s;
+    background-color: white;
+}
+#latop .bttns #login:hover{
+    background-color: #f5d1df;
+    transform: scale(0.9);
+}
+#latop .bttns #signup{
+    color: white;
+    background-color: #d41870;
+    border:1.5px solid #d41870;
+    transition: all ease 0.3s;
+
+}
+#latop .bttns #signup:hover{
+    background-color: #d4045c;
+    transform: scale(0.9);
+
+}
+#latop .bttns #select{
+    color: black;
+}
+#latop .bttns #icon{
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #d4045c;
+    background-color: white;
+    border: none;
+    transition: all ease 0.3s;
+}
+#latop .bttns #icon:hover{
+    background-color: #fceaee;
+    transform: scale(0.9);
+
+}
+#latop .bttns #select{
+    background-color: white;
+    border: none;
+    transition: all ease 0.3s;
+
+}
+#latop .bttns #select:hover{
+    background-color: #fceaee;
+}
+
+/*  */
+#about{
+    width: 100%;
+    /* height: 600px; */
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#about .content{
+    /* width: 45%; */
+    padding: 200px 130px;   
+    /* border: 2px solid; */
+}
+#about .content p{
+    font-size: 34px;
+    font-family: 'Roboto', sans-serif;
+}
+#about .content div{
+    margin: 10px;
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px  0px 4px;
+    background-color: white;
+    /* line-height: 74px; */
+    /* border: 2px solid; */
+}
+#about .content div input{
+    width: 70%;
+    height: 50px;
+    position: relative;
+    top: 13px;
+    background-color: white;
+    border: 0.0975rem solid lightgrey;
+    border-radius: 10px;
+    padding: 0 20px;
+    outline: none;
+}
+#about .content div button{
+    height: 47px;
+    position: relative;
+    top: 13px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 0.0975rem solid #d4045c;
+    background-color: #d4045c;
+    color: white;
+}
+
+#about  img{
+    /* width: 55%; */
+    z-index:-1;
+    position: relative;
+    /* width: 40%; */
+    height: 580px;
+    /* border: 2px solid; */
+}
+#bottom{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 100px;
+    /* border: 2px solid; */
+
+}
+#bottom #para{
+    font-size: 35px;
+    padding: 60px 60px;
+    font-family: 'Roboto', sans-serif;
+}
+#bottom .image{
+    width: 100%;
+    height: 420px;
+}
+#bottom .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#bottom .contant{
+    margin: 0px 100px;
+    position: relative;
+    bottom: 150px;
+    background-color: white;
+    width: 60%;
+    height: 320px;
+    padding: 30px 30px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    box-shadow: 0 0 8px;
+}
+#bottom .contant h4{
+    font-size: 23px;
+}
+#bottom .contant p{
+    font-size: 18px;
+    padding: 10px 0;
+}
+#bottom .contant div{
+    margin-top: 20px;
+}
+#bottom .contant button{
+    padding: 13px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.0275rem;
+    background-color: #d4045c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+#bottom .contant button:hover{
+    transform: scale(1.025);
+}
+#card{
+    position: relative;
+    top: 230px;
+    padding: 60px 140px;
+}
+#card p{
+    font-size: 30px;
+    padding: 30px 2px;
+    font-family: 'Roboto', sans-serif;
+}
+#card .sub-cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 0px;
+}
+#card .card{
+    width: 300px;
+    height: 270px;
+    border-radius: 20px;
+}
+
+#card .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;    
+    transition: all ease 0.5s;
+}
+#card .card img:hover{
+    transform: scale(1.0075);
+}
+#card .card button{
+    position: relative;
+    bottom: 65px;
+    left: 10px;
+    width: 130px;
+    height: 50px;
+    font-size: 19px;
+    border-radius: 15px;
+    border-style: none; 
+}
+#menu{
+    width: 100%;
+    height: 700px;
+    position:relative ;
+    top: 240px;
+    padding: 0px 140px;
+}
+#menu #para{
+    font-size: 33px;
+    padding: 30px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+#menu .main-contant{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d4045c;
+    border-color: #d4045c;
+    color: white;
+}
+#menu .left{
+    width:55% ;
+    height: 100%;
+    padding: 30px 30px;
+}
+#menu .left #paraLeft{
+    font-size: 23px;
+    padding: 20px 30px;
+}
+#menu .left div{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    gap: 0px 15px;
+}
+#menu .left div img{
+    height: 80px;
+    border: 2px solid white;
+    padding: 4px;
+}
+#menu .left button{
+    width: 130px;
+    background-color: black;
+    color: white;
+    font-size: 10px !important;
+    padding: 5px 20px;
+}
+#menu .left button img{
+    width: 30px;
+    object-fit: contain;
+}
+#menu .right{
+    width: 55%;
+    height: 100%;
+}
+#menu .right img{
+    height: 480px !important;
+    position: relative;
+    left: 10px;
+    bottom: 80px;
+}
+#business{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+#business #businessPara{
+    padding: 20px 140px;
+    font-size: 33px;
+    font-family: 'Roboto', sans-serif;
+}
+#business img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#business .businessContant{
+    position: relative;
+    bottom: 120px;
+    margin: 0px 130px;
+    width: 640px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px 60px 20px 30px;
+    box-shadow: 0 0 8px;
+}
+#business .businessContant p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+#business .businessContant #one{
+    font-size: 25px;
+}
+#business .businessContant button{
+    padding: 20px 13px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #d4045c;
+    font-weight: 700px !important;
+    color: white;
+    cursor: pointer;
+}
+#questions{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 230px;
+    padding: 20px 160px;
+    font-family: 'Roboto', sans-serif;
+
+}
+#questions h3{
+    font-size: 34PX;
+    padding: 20px 0px;
+
+}
+#questions hr{
+    margin: 20px 10px;
+}
+#questions p{
+    font-size: 17px;
+    opacity: 0.7;
+}
+#questions p span{
+    color: #d4045c;
+}
+#questions h4{
+    font-size: 22px;
+    padding: 20px 0px;
+
+}
+#questions h6{
+    font-size: 16px;
+    margin-top: 20px;
+}
+#footer{
+    width: 100%;
+    height: 610px;
+    position: relative;
+    top: 300px;
+    padding: 60px 140px;
+    font-family: 'Roboto', sans-serif;
+}
+#footer hr{
+    color: #e9e9e9;
+    opacity: 0.6;
+}
+#footer .top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+}
+#footer .top div{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 10px;
+    opacity: 0.5;
+
+}
+#footer .top div h3{
+    color: #6B6B6B;
+    font-size: 23px;
+    opacity: 0.5;
+
+}
+#footer .top div img{
+    height: 40px;
+    border-radius: 10px;
+    opacity: 0.5;
+
+}
+#footer .top .icon{
+    gap: 20px;
+    color: #6B6B6B;
+    font-size: 25px;
+}
+#footer .top .icon i:hover{
+    color: #d4045c;
+    cursor: pointer;
+    opacity: 1;
+}
+#footer .end{
+    display: flex;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 20px;
+}
+#footer .end span{
+    font-size: 25px;
+    color: #6B6B6B;
+}
+#footer .end p{
+    color: #6B6B6B;
+}
+#footer .end p:hover{
+    color: #d4045c;
+    cursor: pointer;
+}
+#footer .bottom{
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .bottom .one{
+    color: #6B6B6B;
+}
+#footer .bottom ul{
+    list-style: none;
+    padding: 10px 40px;
+    line-height: 21px;
+}
+#footer .bottom ul li{
+    color: #6B6B6B;
+    cursor: pointer;
+}
+#footer .bottom ul li:hover{
+    color: #d4045c;
+}
+@media (max-width:767px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: white;
+    }
+    #latop{
+        display: none;
+    }
+    #mobile{
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 0px 30px;
+        justify-content: space-between;
+        box-shadow: 0 0 8px;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+    #mobile .main-logo{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    #mobile .main-logo a{
+        text-decoration: none;
+        color: #d4045c;
+        font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+
+    }
+    #mobile .main-logo img{
+        height: 35px;
+    }
+    #mobile .login button{
+        border-style: none;
+        font-size: 23px;
+        background-color: transparent;
+        color: #d4045c;         
+    }
+    #mobile .shoping button{
+        border-style: none;
+        font-size: 21px;
+        background-color: transparent;
+        color: #d4045c;         
+    }
+    #about {
+        width: 100%;
+        height: 180px;
+    }
+    
+    #about .content {
+        width: 100%;
+        height: 100px !important;
+        /* border: 2px solid; */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    #about .content div {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    #about .content div input {
+        
+        width: 200%;
+        padding: 13px 10px;
+        height: 300px !important;
+        /* border: 2px solid; */
+        box-shadow: 0 0 4px;
+    }
+    #about .content div button{
+        position: relative;
+        width: 200%;
+        height:50px;
+        padding: 7px 30px;
+        /* padding: 30px 10px; */
+    }
+    
+    #about .content p {
+        font-size: 19px !important;
+        position: relative;
+        top: 20px;
+        /* bottom: 20px; */
+    }
+    
+    #about img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #bottom #para {
+        font-size: 23px;
+        padding: 30px 15px;
+    }
+
+    #bottom .image {
+        height: 250px; /* Adjust height as needed */
+    }
+
+    #bottom .contant {
+        width: 90%;
+        position: relative;
+        right: 80px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    #bottom .contant h4 {
+        font-size: 20px;
+    }
+
+    #bottom .contant div p {
+        font-size: 15px;
+    }
+
+    #bottom .contant button {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    #card {
+        padding: 30px 15px;
+        position: relative;
+        bottom: 500px;
+    }
+
+    #card p {
+        font-size: 26px;
+        padding: 20px 0;
+    }
+
+    #card .sub-cards {
+        gap: 15px 0;
+        
+    }
+
+    #card .card {
+        width: 100%;
+        height: 200px;
+        transition: all ease 0.5s;
+    
+    }
+    #card .card:hover{
+        transform: scale(1.0100);
+    }
+    #card .card img {
+        width: 100%;
+        /* height: auto; */
+        object-fit: cover;
+    }
+
+    #card .card button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    #menu {
+        /* width: 100%; */
+        /* border: 2px solid; */
+        position: relative;
+        bottom: 400px !important;
+        padding: 20px 15px;
+    }
+
+    #menu p {
+        font-size: 25px !important;
+        padding: 20px 0;
+    }
+
+    #menu .main-contant {
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu .main-contant {
+        width: 100%;
+        height: 650px;
+    }
+    /* #menu .left,
+    #menu .right {
+        width: 100%;
+        text-align: center;
+    } */
+    #menu .main-contant .left{
+        /* border: 2px solid black; */
+
+        width: 100%;
+        height: 70px;
+        padding: 30px 0px !important;
+
+    }
+    #menu .main-contant .left p{
+        font-size: 17px !important;
+        position:relative;
+        bottom: 20px;
+        text-align: center;
+        /* padding: 0px !important; */
+
+    }
+    #menu .left img {
+        width: 80%;
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    #menu .left button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #menu .main-contant .left .contant{
+        /* border: 2px solid black; */
+        width: 100%;
+        height: 320px;
+        position: relative;
+        bottom: 30px;
+    }
+    #menu .main-contant .left .contant #scaner{
+        display: none;
+    }
+    #menu .main-contant .left .contant p{
+        position: relative;
+        /* bottom: 70px; */
+        font-size: 16px !important;
+    }
+    #menu .right{
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        position: relative;
+        top: 290px;
+        /* border: 2px solid black; */
+    }
+
+    #menu .right img {
+        width: 300px;
+        position: relative;
+        top: 20px;
+        /* top: 33px; */
+        /* font-size: 50px; */
+        height: 280px !important;
+        /* object-fit: cover; */
+        /* width: 200px; */
+        /* height: 100px; */
+    }
+    #business {
+        position: relative;
+        top: 380px !important;
+        /* padding: 20px 15px; */
+    }
+
+    #business #businessPara {
+        font-size: 26px;
+        padding: 20px 0;
+    }
+
+    #business img {
+        width: 100%;
+        height: auto;
+    }
+
+    #business .businessContant {
+        width: 90%;
+        height: 260px;
+        margin-top: 20px;
+        padding: 15px;
+        text-align: center;
+        position: relative;
+        right: 110px;
+        box-sizing: 0 0 8px;
+    }
+
+    #business .businessContant p#one {
+        position: relative;
+        top: 20px;
+        font-size: 22px;
+    }
+
+    #business .businessContant p#two {
+        position: relative;
+        top: 20px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    #business .businessContant button {
+        width: 100%;
+        position: relative;
+        top: 30px;
+    }
+    #questions {
+        position: relative;
+        top: 530px !important;
+        padding: 20px 15px;
+    }
+
+    #questions .questions-contant h3 {
+        font-size: 26px;
+        padding: 20px 0;
+    }
+
+    #questions .questions-contant p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    #questions .questions-contant hr {
+        margin: 20px 10px;
+    }
+
+    #questions .questions-contant h4 {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    #questions .questions-contant h6 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    /* ======================================================= */
+    #footer {
+        position: relative;
+        top: 550px;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    #footer hr {
+        border-top: 1px solid #ccc;
+        margin: 15px 0;
+    }
+    
+    #footer .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #footer .top div {
+        display: flex;
+        align-items: center;
+    }
+    
+    #footer .top img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    #footer .top h3 {
+        font-size: 24px;
+        margin: 0;
+    }
+    
+    #footer .icon {
+        display: flex;
+    }
+    
+    #footer .icon i {
+        font-size: 24px;
+        margin: 0 10px;
+    }
+    
+    #footer .bottom {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    #footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #footer li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    #footer .end {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 20px;
+    }
+    
+    #footer .end p {
+        display: inline-block;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    
+    #footer .end span {
+        font-size: 14px;
+        margin: 0 5px;
+        color: #ccc;
+    }
+}
